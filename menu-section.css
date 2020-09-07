@@ -2,8 +2,9 @@
     background-color: #7159c1;
     position: relative;
     height: 80px;
-    width: 100%;
+    width: 70px;
     padding: 25px 20px;
+    margin-left: auto;
 }
 
 .menu-toggle {

@@ -4,4 +4,10 @@
     width: 70px;
     margin-right: auto;
     z-index: -1;
+    transition: width .2s ease;
 }
+
+.container:hover {
+    width: 16rem;
+}
+
