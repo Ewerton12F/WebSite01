@@ -1,0 +1,49 @@
+.menu-section {
+    background-color: #7159c1;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    padding: 25px 20px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    margin: auto;
+}
+
+.one,
+.two,
+.three {
+    position: relative;
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    margin-top: 0;
+    
+    transition-duration: 0.3s;
+}
+
+.menu-section.on {
+}
+
+.menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+    z-index: 2;
+}
+
+.menu-section.on .menu-toggle .two {
+    transform: scale(2.33, 16);
+    background-color: #ff0000;
+    z-index: 1;
+}
+
+.menu-section.off .menu-toggle .two {
+    transition: ;
+    z-index: 0;
+}
+
+.menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+    z-index: 2;
+}
