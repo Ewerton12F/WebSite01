@@ -7,7 +7,8 @@
     transition: width .2s ease;
 }
 
-.container:hover {
-    width: 16rem;
+.container.on {
+    width: 13rem;
 }
+
 

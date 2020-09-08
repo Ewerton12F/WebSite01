@@ -1,15 +1,29 @@
 .menu-section {
-    background-color: #7159c1;
     position: relative;
     height: 80px;
-    width: 70px;
+    width: 100%;
     padding: 25px 20px;
-    margin-left: auto;
+    margin: auto;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .menu-toggle {
     cursor: pointer;
-    margin: auto;
+    width: 27px;
+    margin-left: auto;
+}
+
+.menu-toggle-close {
+    display: none;
+}
+
+.menu-toggle-close.on {
+    display: block;
+    position: absolute;
+    color: rgb(255, 152, 152);
+    font-size: 1.5rem;
+    top: 24px;
+    left: 30px;
 }
 
 .one,
@@ -24,27 +38,36 @@
     
     transition-duration: 0.3s;
 }
+.menu-section.off {
+    background-color: #7159c1;
+}
 
 .menu-section.on {
+    background-color: rgba(253, 14, 14, 0.801);
 }
 
 .menu-section.on .menu-toggle .one {
     transform: rotate(45deg) translate(7px, 7px);
+    background-color: rgb(255, 152, 152);
+
     z-index: 2;
 }
 
 .menu-section.on .menu-toggle .two {
-    transform: scale(2.33, 16);
+    opacity: 0;
+/*     transform: scale(2.33, 16);
     background-color: #ff0000;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .menu-section.off .menu-toggle .two {
-    transition: ;
-    z-index: 0;
+/*     transition: ;
+    z-index: 0; */
 }
 
 .menu-section.on .menu-toggle .three {
     transform: rotate(-45deg) translate(8px, -9px);
+    background-color: rgb(255, 152, 152);
+
     z-index: 2;
 }
